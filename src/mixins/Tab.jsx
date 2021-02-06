@@ -5,7 +5,6 @@ const Tab = ({url, title}) => {
 		path: url,
 		exact: true
 	});
-	console.dir(match)
 	return (
 		<li>
 			<Link className={match && 'active'} to={url}>{title}</Link>

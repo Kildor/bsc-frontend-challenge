@@ -3,19 +3,19 @@ import Tab from "./Tab";
 
 const tabs = [
 	{
-		url:'/russia',
+		url:'/category/russia',
 		title: 'Россия'
 	},
 	{
-		url:'/world',
+		url:'/category/world',
 		title: 'Мир'
 	},
 	{
-		url:'/currency',
+		url:'/category/currency',
 		title: 'Валюта'
 	},
 	{
-		url:'/trends',
+		url:'/category/trends',
 		title: 'Тренды'
 	}
 ];

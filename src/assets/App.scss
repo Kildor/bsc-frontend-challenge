@@ -1,9 +1,13 @@
 .app-main {
   max-width: 1400px;
   padding: 72px 104px;
-  padding: 5vw 72px;
 }
 
+@media all and (max-width: 750px) {
+  .app-main {
+    padding: 72px 9vw;
+  }
+}
 @media all and (max-width: 400px) {
   .app-main {
     padding: 72px 20px;

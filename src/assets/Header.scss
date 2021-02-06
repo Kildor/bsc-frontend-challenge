@@ -1,4 +1,6 @@
 .header-tabs {
+	position: relative;
+	overflow: auto;
 	ul.tabs-container {
 		display: flex;
 		margin: 0;

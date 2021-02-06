@@ -1,4 +1,4 @@
-import Header from './mixins/Header';
+import Header from './Modules/Header/Header';
 import './assets/App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NewsList from './Modules/NewsList/NewsList';

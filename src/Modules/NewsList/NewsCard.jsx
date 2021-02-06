@@ -1,11 +1,14 @@
-import '../../assets/NewsCard.scss'
-
 const DateTime = ({datetime}) => {
-	// we use format date from the locale settings of the client.
+	// we use format of the date from the locale settings of the client.
 	const formattedDT = new Date(datetime).toLocaleString(); 
 	return (
 		<span className='news_date'>{formattedDT}</span>
 	);
+}
+const Counter = ({icon, children}) => {
+	return (
+		<span className={'icon icon-'+icon}>{children}</span>
+	)
 }
 const NewsCard = (news) => {
 	return (
@@ -18,16 +21,13 @@ const NewsCard = (news) => {
 			<footer className="news_footer">
 				<DateTime datetime={news.publish_date}/>
 				<div className="counters">
-					<i className="icon icon-likes">{news.like_count}</i>
-					<i className="icon icon-comments">{news.comment_count}</i>
-
-					<i className="icon icon-download"></i>
-
+					<Counter icon="likes">{news.like_count}</Counter>
+					<Counter icon="comments">{news.comment_count}</Counter>
+					<Counter icon="download"></Counter>
 				</div>
 
 
 			</footer>
-			{/* {JSON.stringify(props)} */}
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Suisse Int'l";
+  font-family: "Suisse Intl";
   src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot");
   src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff2") format("woff2"),
@@ -7,8 +7,8 @@
     url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.svg#Suisse Int'l") format("svg");
 }
-html,
-body {
+
+html, body {
   min-width: 100%;
   min-height: 100%;
 }

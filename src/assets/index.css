@@ -1,17 +1,23 @@
-@import url(//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl);
-
-html, body {
+@font-face {
+  font-family: "Suisse Int'l";
+  src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot");
+  src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.svg#Suisse Int'l") format("svg");
+}
+html,
+body {
   min-width: 100%;
   min-height: 100%;
-
 }
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #F7F7F7 0%, #FFFFFF 100%, #FFFFFF 100%);  
-  font-family: -apple-system, BlinkMacSystemFont, 'Suisse Intl', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%, #ffffff 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Suisse Intl", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   /* -webkit-font-smoothing: antialiased; */
   /* -moz-osx-font-smoothing: grayscale; */
 }

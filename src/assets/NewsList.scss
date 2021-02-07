@@ -33,6 +33,13 @@
 			min-width: 376px;
 			margin: 16px;
 			padding: 20px 24px;
+
+			@media all and (max-width: 400px) {
+				flex: 1 1 auto;
+				width: auto;
+				min-width: fit-content;
+			}
+
 			a.news_rubric {
 				color: #60759a;
 				text-transform: lowercase;
@@ -41,7 +48,7 @@
 				display: block;
 			}
 			.news_header {
-				height: 72px;
+				min-height: 72px;
 				font-size: 20px;
 				line-height: 24px;
 				color: #2a2a2a;
@@ -94,53 +101,41 @@
 
 				&.icon-share {
 					background-image: url("./share.svg");
-					height: 24px;
-					width: 24px;
-					vertical-align: middle;
+					height: 20px;
+					width: 20px;
+					vertical-align: text-top;
 					padding: 0;
 				}
 			}
 		}
-
 	}
-		.showmore {
-			height: 56px;
-			margin-top: 32px;
-			text-align: center;
-			background: linear-gradient(
-				to bottom,
-				transparent 0,
-				transparent 29px,
-				rgba(#154373, 0.15) 29px,
-				rgba(#154373, 0.15) 30px,
-				transparent 30px,
-				transparent 100%
-			);
+	.showmore {
+		height: 56px;
+		margin-top: 32px;
+		text-align: center;
+		background: linear-gradient(
+			to bottom,
+			transparent 0,
+			transparent 29px,
+			rgba(#154373, 0.15) 29px,
+			rgba(#154373, 0.15) 30px,
+			transparent 30px,
+			transparent 100%
+		);
 
-			button {
-				line-height: 56px;
-				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
-				color: #fff;
-				font-size: 16px;
-				font-weight: 400px;
-				font-family: -apple-system, BlinkMacSystemFont, "Suisse Intl", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-					"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-				background: #016ef2;
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
-				border-radius: 8px;
-				border: none;
-				padding: 0 30px;
-			}
-		}
-
-}
-
-@media all and (max-width: 400px) {
-	.newslist {
-		.news_card {
-			flex: 1 1 auto;
-			width: auto;
-			min-width: fit-content;
+		button {
+			line-height: 56px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+			color: #fff;
+			font-size: 16px;
+			font-weight: 400px;
+			font-family: -apple-system, BlinkMacSystemFont, "Suisse Intl", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+				"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+			background: #016ef2;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+			border-radius: 8px;
+			border: none;
+			padding: 0 30px;
 		}
 	}
 }

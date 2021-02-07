@@ -1,8 +1,8 @@
 const DateTime = ({datetime}) => {
 	// we use format of the date from the locale settings of the client.
-	const formattedDT = new Date(datetime).toLocaleString(); 
+	const formattedDT = new Date(datetime).toLocaleString([], { year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"}); 
 	return (
-		<span className='news_date'>{formattedDT}</span>
+		<span className="news_date">{formattedDT}</span>
 	);
 }
 const Counter = ({icon, children}) => {

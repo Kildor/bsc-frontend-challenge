@@ -23,7 +23,7 @@ const NewsCard = (news) => {
 				<div className="counters">
 					<Counter icon="likes">{news.like_count}</Counter>
 					<Counter icon="comments">{news.comment_count}</Counter>
-					<Counter icon="download"></Counter>
+					<Counter icon="share"></Counter>
 				</div>
 
 

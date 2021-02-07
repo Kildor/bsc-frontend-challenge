@@ -6,7 +6,7 @@ import API from '../API';
 
 const itemsPerPage = 3;
 const NewsList = (props) => {
-	let { category } = useParams(); // not implemented.
+	const { category } = useParams(); // not implemented.
 	const [startIndex, setStartIndex] = useState(0);
 	const [news, setNews] = useState([]);
 	useEffect(() => {
@@ -29,8 +29,8 @@ const NewsList = (props) => {
 	const updateIndex = () => { setStartIndex(startIndex + itemsPerPage) };
 
 	return (
-		<div className="newslist">
-			{visibleNews}
+		<div className="newslist-container">
+			<div className="newslist">{visibleNews}</div>
 			{amount < news.length &&
 				<div className='showmore'>
 					<button onClick={updateIndex}>Смотреть ещё</button>

@@ -10,6 +10,7 @@ function App() {
       <Header/>
       <div className="app-content">
         <Switch>
+          <Route path='/' exact><NewsList/></Route>
           <Route path='/category/:category' component={NewsList}/>
         </Switch>
       </div>
